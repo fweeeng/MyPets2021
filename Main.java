@@ -1,9 +1,12 @@
+//COMMIT HYGIENE: commit before going to another branch
 class Main 
 {
   public static void main(String[] args) 
   {
     //name, hasHair, color, cuteness, friendliness
     //PetParent pet = new PetParent("Bob", true, "yellow", 2, 0.9);
+    //polymorphism = hierarchy of many roles
+    //what methods does the particular object have access to?
 
     Dog marsh = new Dog("Marsh", true, "brown", 10, 40.0, true, 10, "Chow-chow");
 
@@ -17,6 +20,12 @@ class Main
     
     PetParent clifford = new Axolotl("Clifford", true, "purple", 10, 0.01, false);
 
+    Owner emiliano = new Owner("Emiliano");
+    System.out.println(emiliano.toString());
+
+    System.out.println(emiliano.feed(marsh));
+    System.out.println(emiliano.feed(vader));
+    /*
     System.out.println(vader.dailyRoutine());
     System.out.println(((Dog)vader).getLoyalty());//example of casting
     System.out.println(clifford.dailyRoutine());
@@ -27,6 +36,8 @@ class Main
     {
         System.out.println(animals.getName() + " says " + animals.speak());
     }
+    */
+
     //*REMEMBER: CAST FIRST* (or else you lose the data)
 
     // System.out.println(ombre.speak());
