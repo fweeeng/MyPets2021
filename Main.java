@@ -15,8 +15,18 @@ class Main
     */
     PetParent vader = new Dog("Vader", true, "brown", 4, 0.02, false, 1, "Sheepdog");
     
+    PetParent clifford = new Axolotl("Clifford", true, "purple", 10, 0.01, false);
+
     System.out.println(vader.dailyRoutine());
     System.out.println(((Dog)vader).getLoyalty());//example of casting
+    System.out.println(clifford.dailyRoutine());
+
+    PetParent[] myPets = {marsh, vader, ombre, clifford};
+
+    for(PetParent animals: myPets)
+    {
+        System.out.println(animals.getName() + " says " + animals.speak());
+    }
     //*REMEMBER: CAST FIRST* (or else you lose the data)
 
     // System.out.println(ombre.speak());
