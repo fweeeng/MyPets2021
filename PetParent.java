@@ -30,7 +30,7 @@ abstract class PetParent
   {
     return name + ": Play in the morning and eat dinner at 5:00 PM";
   }
-
+  
   public abstract String speak(); //this is an abstract method. it has no body
 
   public String toString()

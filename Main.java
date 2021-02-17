@@ -8,9 +8,20 @@ class Main
     Dog marsh = new Dog("Marsh", true, "brown", 10, 40.0, true, 10, "Chow-chow");
 
     Axolotl ombre = new Axolotl("Ombre", true, "blue", 5, 0.7, true); 
+    
+    /*
+    * PetParent type using the Dog method
+    * Can access constructors in PetParent
+    */
+    PetParent vader = new Dog("Vader", true, "brown", 4, 0.02, false, 1, "Sheepdog");
+    
+    System.out.println(vader.dailyRoutine());
+    System.out.println(((Dog)vader).getLoyalty());//example of casting
+    //*REMEMBER: CAST FIRST* (or else you lose the data)
 
-    System.out.println(ombre.speak());
-    System.out.println(marsh.speak());
+    // System.out.println(ombre.speak());
+    // System.out.println(marsh.speak());
+
     //String name, boolean hasHair, String color, int cuteness, double friendliness, boolean hasRegen
 
     //System.out.println(ombre.dailyRoutine());
